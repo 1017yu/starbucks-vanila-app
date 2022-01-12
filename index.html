@@ -28,8 +28,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css" />
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- LODASH -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  
   <script defer src="./js/main.js"></script>
 </head>
 
@@ -373,6 +385,71 @@
       </div>
     </div>
   </header>
+
+  <!-- VISUAL -->
+  <section class="visual">
+    <div class="inner">
+
+      <div class="title fade-in">
+
+        <img src="./images/visual_title.png" alt="STARBUCKS DELIGHTFUL START TO THE YEARS" />
+        <a href="javascript:void(0)" class="btn btn--brown">자세히보기</a>
+
+      </div>
+      <div class="fade-in">
+        <img src="./images/visual_cup1.png" alt="new OATMEAL LATTE" class="cup1 image" />
+        <img src="./images/visual_cup1_text.png" alt="오트밀 라떼" class="cup1 text" />
+      </div>
+      <div class="fade-in">
+        <img src="./images/visual_cup2.png" alt="new CARAMEL CRUMBLE MOCHA" class="cup2 image" />
+        <img src="./images/visual_cup2_text.png" alt="카라멜 크럼블 모카" class="cup2 text" />
+      </div>
+      <div class="fade-in">
+        <img src="./images/visual_spoon.png" alt="Spoon" class="spoon" />
+      </div>
+    </div>
+  </section>
+
+
+  <section class="notice">
+
+    <div class="notice-line">
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+      <div class="inner">
+
+        <div class="inner__left">
+          <h2>공지사항</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">2022 스타벅스 매장 영업시간</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">[당첨자 발표] 2022 스타벅스 플래너 이벤트</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">스타벅스커피 코리아 애플리케이션 버젼 업데이트</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">[당첨자 발표] 뉴이어 전자영수증 이벤트</a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="notice-line__more">
+            <div class="material-icons">add_circle</div>
+          </a>
+        </div>
+        <div class="inner__right">
+          <h2>스타벅스 프로모션</h2>
+          <div class="toggle-promotion">
+            <div class="material-icons">upload</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
 </body>
 
 </html>
