@@ -448,3 +448,60 @@ header .badges .badge {
 .notice .notice-line .inner__right .toggle-promotion .material-icons{
   font-size: 30px;
 }
+
+.notice .promotion {
+  height: 693px;
+  position: relative;
+  background-color: #f6f5ef;
+}
+
+.notice .promotion .swiper-container {
+  width: calc(819px * 3 + 20px);
+  height: 553px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: calc((819px * 3 + 20px) / -2);
+  overflow: hidden;
+}
+
+.notice .promotion .swiper-slide {
+  opacity: .2;
+  transition: opacity 1s;
+  position: relative;
+}
+
+.notice .promotion .swiper-slide-next {
+  opacity: 1;
+}
+
+.notice .promotion .swiper-slide .btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.notice .promotion .swiper-pagination {
+  bottom: 40px;
+  left: 0;
+  right: 0;
+}
+
+.notice .promotion .swiper-pagination .swiper-pagination-bullet {
+  background-color: transparent;
+  background-image: url("../images/promotion_slide_pager.png");
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  outline: none;
+}
+
+.notice .promotion .swiper-pagination .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+
+.notice .promotion .swiper-pagination .swiper-pagination-bullet-active {
+  background-image: url("../images/promotion_slide_pager_on.png");
+}
