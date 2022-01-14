@@ -1,6 +1,11 @@
+import gsap from "gsap";
+import { Swiper } from "react";
+import { throttle } from "lodash";
+
+
+
 const searchEl = document.querySelector('.search');
 const searchInputEl = searchEl.querySelector('input');
-
 
 // Search
 searchEl.addEventListener('click', function () {
@@ -20,7 +25,7 @@ searchInputEl.addEventListener('blur', function () {
 // Badge
 const badgeEl = document.querySelector('header .badges');
 
-window.addEventListener('scroll', _.throttle(function (){
+window.addEventListener('scroll', throttle(function (){
   if (window.scrollY > 500) {
     // 배지 badge 숨기기
     // gsap.to(요소, 지속시간(s), {옵션})
