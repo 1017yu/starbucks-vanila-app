@@ -115,11 +115,9 @@ header > .inner {
   height: 120px;
 }
 header .logo {
-  height: 75px;
-  position: absolute;
-  top: 0;
+  width: 30px;
+  height: 50px;
   bottom: 0;
-  left: 0;
   margin: auto;
 }
 header .sub-menu {
